@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Web Development #1</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Todo List</h1>
+        <a href="page-1/index.html"> Go to page 1 </a>
+        <div>
+            <input 
+                id= "tf-input"
+                class="textfield" 
+                type="text" 
+                placeholder="Enter a task"
+            />
+            <button class="button" onclick="addTask()">Add Task</button>
+        </div> 
+        <div>
+            <ul id="task-container">
+                <li class="list-item" id ="task-1">
+                    Task 1 
+                    <button class="edit-button" onclick="editTask('task-1')">
+                        Edit
+                    </button>
+                    <button class="delete-button" onclick="deleteTask('task-1')">
+                        Delete
+                    </button>
+                </li>
+                <li class="list-item" id ="task-2">
+                    Task 2 
+                    <button class="edit-button" onclick="editTask('task-1')">
+                        Edit
+                    </button>
+                    <button class="delete-button" onclick="deleteTask('task-2')">
+                        Delete
+                    </button>
+                </li>
+                <li class="list-item" id ="task-3">
+                    Task 3 
+                    <button class="edit-button" onclick="editTask('task-1')">
+                        Edit
+                    </button>
+                    <button class="delete-button" onclick="deleteTask('task-3')">
+                        Delete
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
